@@ -1,4 +1,5 @@
-﻿using System;
+﻿using RssModel;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,11 @@ namespace RssFeedReader.Windows
         public MainWindow()
         {
             InitializeComponent();
+
+            // TODO: temporary start
+            var source = new Uri("http://feeds.feedburner.com/EtsBreakingNews");
+            var feed = RssModel.Feed.Read(source);
+            // TODO: temporary end
         }
     }
 }
