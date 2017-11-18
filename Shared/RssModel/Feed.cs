@@ -5,22 +5,17 @@ namespace RssModel
 {
     public class Feed
     {
-        private readonly string title;
-        private readonly string description;
-        private readonly Uri link;
-        private readonly IList<FeedItem> items;
-
-        public string Title => title;
-        public string Description => description;
-        public Uri Link => link;
-        public IList<FeedItem> Items => items;
+        public string Title { get; }
+        public string Description { get; }
+        public Uri Link { get; }
+        public IList<FeedItem> Items { get; }
 
         internal Feed(string title, string description, Uri link)
         {
-            this.title = title;
-            this.description = description;
-            this.link = link;
-            items = new List<FeedItem>();
+            Title = title;
+            Description = description;
+            Link = link;
+            Items = new List<FeedItem>();
         }
 
         public static Feed Read(Uri source)
