@@ -5,7 +5,9 @@ VisualStudioVersion = 15.0.27004.2005
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RssFeedReader.Windows", "RssFeedReader.Windows\RssFeedReader.Windows.csproj", "{3B3E1222-3EBE-47B4-93F4-0D1C66C2C249}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RssModel", "..\Shared\RssModel\RssModel.csproj", "{41D8229D-908A-4747-9038-BF09F59137FF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RssModel", "..\Shared\RssModel\RssModel.csproj", "{41D8229D-908A-4747-9038-BF09F59137FF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RssModel.UnitTests", "..\Shared\RssModel.UnitTests\RssModel.UnitTests.csproj", "{D3CD1F4C-E273-44CD-B467-CC99F7B502FC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{41D8229D-908A-4747-9038-BF09F59137FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{41D8229D-908A-4747-9038-BF09F59137FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{41D8229D-908A-4747-9038-BF09F59137FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3CD1F4C-E273-44CD-B467-CC99F7B502FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3CD1F4C-E273-44CD-B467-CC99F7B502FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3CD1F4C-E273-44CD-B467-CC99F7B502FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3CD1F4C-E273-44CD-B467-CC99F7B502FC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
