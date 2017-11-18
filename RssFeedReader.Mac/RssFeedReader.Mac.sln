@@ -5,8 +5,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RssFeedReader.Mac", "RssFee
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RssModel", "..\Shared\RssModel\RssModel.csproj", "{3B7904E2-2CEC-4CF9-A371-8F391F145792}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RssModel.UnitTests", "RssModel.UnitTests\RssModel.UnitTests.csproj", "{02F7F2D1-A492-4145-8273-8275158C2B96}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -21,9 +19,5 @@ Global
 		{3B7904E2-2CEC-4CF9-A371-8F391F145792}.Debug|x86.Build.0 = Debug|Any CPU
 		{3B7904E2-2CEC-4CF9-A371-8F391F145792}.Release|x86.ActiveCfg = Release|Any CPU
 		{3B7904E2-2CEC-4CF9-A371-8F391F145792}.Release|x86.Build.0 = Release|Any CPU
-		{02F7F2D1-A492-4145-8273-8275158C2B96}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{02F7F2D1-A492-4145-8273-8275158C2B96}.Debug|x86.Build.0 = Debug|Any CPU
-		{02F7F2D1-A492-4145-8273-8275158C2B96}.Release|x86.ActiveCfg = Release|Any CPU
-		{02F7F2D1-A492-4145-8273-8275158C2B96}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
