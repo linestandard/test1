@@ -81,5 +81,11 @@
   <ItemGroup>
     <InterfaceDefinition Include="Main.storyboard" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Shared\RssModel\RssModel.csproj">
+      <Project>{3B7904E2-2CEC-4CF9-A371-8F391F145792}</Project>
+      <Name>RssModel</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Mac\Xamarin.Mac.CSharp.targets" />
 </Project>

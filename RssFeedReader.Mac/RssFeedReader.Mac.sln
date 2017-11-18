@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RssFeedReader.Mac", "RssFeedReader.Mac\RssFeedReader.Mac.csproj", "{A4B17DE7-25D8-4C96-B872-FB66776A627B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RssModel", "..\Shared\RssModel\RssModel.csproj", "{3B7904E2-2CEC-4CF9-A371-8F391F145792}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -13,5 +15,9 @@ Global
 		{A4B17DE7-25D8-4C96-B872-FB66776A627B}.Debug|x86.Build.0 = Debug|x86
 		{A4B17DE7-25D8-4C96-B872-FB66776A627B}.Release|x86.ActiveCfg = Release|x86
 		{A4B17DE7-25D8-4C96-B872-FB66776A627B}.Release|x86.Build.0 = Release|x86
+		{3B7904E2-2CEC-4CF9-A371-8F391F145792}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{3B7904E2-2CEC-4CF9-A371-8F391F145792}.Debug|x86.Build.0 = Debug|Any CPU
+		{3B7904E2-2CEC-4CF9-A371-8F391F145792}.Release|x86.ActiveCfg = Release|Any CPU
+		{3B7904E2-2CEC-4CF9-A371-8F391F145792}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
