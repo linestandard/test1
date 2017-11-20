@@ -8,9 +8,10 @@ namespace RssModel
         public string Title { get; }
         public string Description { get; }
         public Uri Link { get; }
-        public IList<FeedItem> Items { get; }
 
-        internal Feed(string title, string description, Uri link)
+        private IList<FeedItem> Items { get; }
+
+        public Feed(string title, string description, Uri link)
         {
             Title = title;
             Description = description;
@@ -18,9 +19,9 @@ namespace RssModel
             Items = new List<FeedItem>();
         }
 
-        public static Feed Read(Uri source)
+        public void AddFeedItem(FeedItem feedItem)
         {
-            return FeedReader.Read(source);
+            Items.Add(feedItem);
         }
     }
 }

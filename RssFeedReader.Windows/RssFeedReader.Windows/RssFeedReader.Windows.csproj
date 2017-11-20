@@ -94,6 +94,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\Shared\DataAccess\DataAccess.csproj">
+      <Project>{15f71a8e-4298-4f6d-b725-d121bbf5f59e}</Project>
+      <Name>DataAccess</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\Shared\RssModel\RssModel.csproj">
       <Project>{41d8229d-908a-4747-9038-bf09f59137ff}</Project>
       <Name>RssModel</Name>

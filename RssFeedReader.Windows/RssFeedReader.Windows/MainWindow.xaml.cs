@@ -1,4 +1,4 @@
-﻿using RssModel;
+﻿using DataAccess;
 using System;
 using System.Windows;
 
@@ -15,8 +15,9 @@ namespace RssFeedReader.Windows
             InitializeComponent();
 
             // TODO: temporary start
-            var source = new Uri("http://feeds.feedburner.com/EtsBreakingNews");
-            var feed = Feed.Read(source);
+            var sourceUri = new Uri("http://feeds.feedburner.com/EtsBreakingNews");
+            var uriFeedReader = new UriFeedReader(sourceUri);
+            var feed = uriFeedReader.ReadFeed();
             // TODO: temporary end
         }
     }

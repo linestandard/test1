@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RssModel", "..\Shared\RssMo
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RssModel.UnitTests", "..\Shared\RssModel.UnitTests\RssModel.UnitTests.csproj", "{022F3FE0-B4BC-41E7-8A42-16EE3FC6F543}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess", "..\Shared\DataAccess\DataAccess.csproj", "{15F71A8E-4298-4F6D-B725-D121BBF5F59E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{022F3FE0-B4BC-41E7-8A42-16EE3FC6F543}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{022F3FE0-B4BC-41E7-8A42-16EE3FC6F543}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{022F3FE0-B4BC-41E7-8A42-16EE3FC6F543}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15F71A8E-4298-4F6D-B725-D121BBF5F59E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15F71A8E-4298-4F6D-B725-D121BBF5F59E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15F71A8E-4298-4F6D-B725-D121BBF5F59E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15F71A8E-4298-4F6D-B725-D121BBF5F59E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
