@@ -21,7 +21,7 @@ namespace DataAccess
 
             var feed = new Feed(rssChannelNode["title"].InnerText, rssChannelNode["description"].InnerText, new Uri(rssChannelNode["link"].InnerText));
 
-            foreach (var itemNode in ReadChildNodes(rssChannelNode, "item"))
+            foreach (var itemNode in ReadNamedChildNodes(rssChannelNode, "item"))
             {
                 var item = new FeedItem(itemNode["title"].InnerText, itemNode["description"].InnerText, new Uri(itemNode["link"].InnerText));
                 feed.AddFeedItem(item);
@@ -33,15 +33,15 @@ namespace DataAccess
         private XmlNode ReadRssChannelNode()
         {
             var rssNode = ReadRssNode();
-            return ReadSingleChildNode(rssNode, "channel");
+            return ReadSingleNamedChildNode(rssNode, "channel");
         }
 
         private XmlNode ReadRssNode()
         {
-            return ReadSingleChildNode(RssDoc, "rss");
+            return ReadSingleNamedChildNode(RssDoc, "rss");
         }
 
-        private IList<XmlNode> ReadChildNodes(XmlNode parentNode, string childNodeName)
+        private IList<XmlNode> ReadNamedChildNodes(XmlNode parentNode, string childNodeName)
         {
             var childNodes = new List<XmlNode>();
 
@@ -57,7 +57,7 @@ namespace DataAccess
             return childNodes;
         }
 
-        private XmlNode ReadSingleChildNode(XmlNode parentNode, string childNodeName)
+        private XmlNode ReadSingleNamedChildNode(XmlNode parentNode, string childNodeName)
         {
             for (int i = 0; i < parentNode.ChildNodes.Count; ++i)
             {

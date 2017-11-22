@@ -9,7 +9,7 @@ namespace RssModel
         public string Description { get; }
         public Uri Link { get; }
 
-        private IList<FeedItem> Items { get; }
+        public IList<FeedItem> Items { get; }
 
         public Feed(string title, string description, Uri link)
         {
